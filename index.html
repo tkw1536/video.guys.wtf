@@ -1,1 +1,63 @@
-WIP
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="resources/lib/98css/98.css" />
+    <link rel="stylesheet" type="text/css" href="resources/capture.css" />
+    <title>video.guys.wtf</title>
+</head>
+
+<body>
+
+    <div class="window" style="margin: 32px; width: 80%">
+        <div class="title-bar">
+            <div class="title-bar-text">
+                Screen Capture
+            </div>
+            <div class="title-bar-controls">
+                <button aria-label="Close"></button>
+            </div>
+        </div>
+        <div class="window-body">
+            <p>
+                This page allows you to test screen sharing via the <a href="https://developer.mozilla.org/en-US/docs/Web/API/Screen_Capture_API">Screen Capture API</a>.
+            </p>
+            <p>
+                The video will not be shared with any server and only be visible in the text box below.
+            </p>
+
+            <fieldset>
+                <div class="field-row">
+                    <button id="capture_buttonStart" disabled="disabled">Start Capture</button>
+                    <button id="capture_buttonStop" disabled="disabled">Stop Capture</button>
+                    &nbsp;
+                    
+                    Cursor
+                    <select id="capture_cursorBox">
+                        <option value="always">Always Visible</option>
+                        <option value="motion" selected>Visible only when in Motion</option>
+                        <option value="never">Never Visible</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <br />
+
+            <fieldset>
+                <video id="capture_video" autoplay></video>
+            </fieldset>
+
+            <fieldset>
+                <pre id="capture_log"></pre>
+            </fieldset>
+        </div>
+    </div>
+
+    Adapted from the <a href="https://mdn.mozillademos.org/en-US/docs/Web/API/Screen_Capture_API/Using_Screen_Capture$samples/Simple_screen_capture?revision=1611740">MDN example</a> which is licensed under CC0. <br />
+    Using <a href="https://jdan.github.io/98.css/">98.css</a>
+
+    <script type="text/javascript" src="resources/capture.js"></script>
+</body>
+
+</html>
