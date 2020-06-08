@@ -2,6 +2,16 @@
 <html>
 
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-159220391-8"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-159220391-8');
+    </script>
+
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="resources/lib/98css/98.css" />
     <link rel="stylesheet" type="text/css" href="resources/capture.css" />
@@ -32,7 +42,7 @@
                     <button id="capture_buttonStart" disabled="disabled">Start Capture</button>
                     <button id="capture_buttonStop" disabled="disabled">Stop Capture</button>
                     &nbsp;
-                    
+
                     Cursor
                     <select id="capture_cursorBox">
                         <option value="always">Always Visible</option>
